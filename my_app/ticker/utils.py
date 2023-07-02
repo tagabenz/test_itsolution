@@ -6,7 +6,7 @@ import os
 
 def anim_create(text):
 
-    # plt.rcParams['animation.ffmpeg_path'] = f'{os.getcwd()}/ffmpeg'
+    plt.rcParams['animation.ffmpeg_path'] = f'{os.getcwd()}/ffmpeg'
     plt.style.use('dark_background')
     fig=plt.figure()
 
