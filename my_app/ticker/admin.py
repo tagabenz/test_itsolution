@@ -3,4 +3,4 @@ from .models import Ticker
 
 @admin.register(Ticker)
 class TickerAdmin(admin.ModelAdmin):
-    pass 
+    list_display=('message','time_create',)
