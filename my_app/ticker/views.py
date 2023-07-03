@@ -12,7 +12,7 @@ class Index(View):
         })
 
     def post(self,request):
-        form=TickerForms(request.POST)    
+        form=TickerForms(request.POST)
 
         if form.is_valid():
             form.save()
@@ -24,5 +24,5 @@ def runtext(request):
     anim_create(text=request.GET['text'])
 
     return render(request, 'runtext.html',context={
-        'text':request.GET['text'],
-    })        
+        'name':request.GET['text'],
+    })
